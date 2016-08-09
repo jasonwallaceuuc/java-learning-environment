@@ -1,0 +1,145 @@
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    opacity: 0.9;
+}
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: px;
+}
+
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+/* shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+    background: #6495ED;
+}
+
+/*change background color of the top navbar to fit with sidebar */
+.navbar-inverse {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+padding-bottom: 72.986px;
+
+}
+
+navbar.navbar-inverse {
+padding: 72.986px;
+}
+
+/*change the active color of the top navbar to fit with sidebar */
+.navbar-inverse .navbar-nav > .active{
+   color: #6495ED;
+  background: #d65c14;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+     color: #000;
+     background: #6495ED;
+}
+
+.video-container1 {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container1 iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:50%;
+	height:50%;
+}
+
+body {font-family:Arial, Lucida Console;}
+.clearfix:before, 
+.clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+a {color: #2C3E50; text-decoration:none;}
+
+a:hover {text-decoration:underline;}
+
+myModal {
+top:5%;
+right:50%;
+outline: none;
+background-color: #6495ED; 
+
+}
+
+.form{width: 600px; margin: 0 auto;}
+input[type='text'], input[type='email'], input[type='password'], input[type='b_no'], 
+{width: 100px; 
+border-radius: 2px;
+border: 1px solid #CCC; 
+padding: 50px; 
+color: #6495ED; 
+font-size: 14px; 
+margin-top: 10px;}
+
+input[type='submit']
+{padding: 10px 25px 8px; 
+color:  #ffffff; 
+background-color: #6495ED; 
+text-shadow: rgba(0,0,0,0.24) 0 1px 0; 
+font-size: 16px; 
+box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0; 
+border: 1px solid #6faf38; 
+border-radius: 2px; 
+margin-top: 10px; 
+cursor:pointer;}
+input[type='submit']:hover {background-color:  #2C3E50;}
+
+.container{
+	margin-top:20px;
+	
+	background:#FFFFFF;
+	border:1px solid #E0E0E0;
+	padding:15px;
+	
+	/* Rounded corners */
+	-moz-border-radius:20px;
+	-khtml-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius:20px;
+}
